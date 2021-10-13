@@ -5,19 +5,21 @@
  */
 package com.scraper;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Main is the class which calls all the functions for the application to run, and it contains the *
+ * The Main class calls all the functions for the application to run, and it contains the *
  * main method.
  */
 public class Main {
 
+  /**
+   * This is the main method. This is the entry point for the application. It starts by getting the username as a string input from the user. Then it creates a Retriever function and calls the getContent method.
+   * @param args The args parameter is an array of strings of command line arguments.
+   */
   public static void main(String[] args) {
     String username;
-    String name = new String();
+    String name = null;
     Scanner input = new Scanner(System.in);
     System.out.print("Please enter the username: ");
     username = input.nextLine();

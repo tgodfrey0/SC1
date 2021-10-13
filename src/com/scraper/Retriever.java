@@ -7,7 +7,15 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
+/**
+ * The Retriever class contains the methods to retrieve the HTML from the webpage and then parse that HTML.
+ */
 public class Retriever {
+    /**
+     * The getContent method retrieves the HTML from the webpage.
+     * @param username The username parameter is a string of the username of the person.
+     * @return line - The line which contains the name is returned.
+     */
 
     public String getContent(String username){
         try {
@@ -35,6 +43,11 @@ public class Retriever {
         return null;
     }
 
+    /**
+     * The getName method parses the required line from the HTML and return the name of the person.
+     * @param line The line parameter is a string which contains the HTML line in which the name is contained.
+     * @return name - A string of the person's name is returned.
+     */
     public String getName(String line){
         String[] components;
         String name = null;
