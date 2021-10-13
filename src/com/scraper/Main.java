@@ -8,7 +8,7 @@ package com.scraper;
 import java.util.Scanner;
 
 /**
- * The Main class calls all the functions for the application to run, and it contains the *
+ * The Main class calls all the functions for the application to run, and it contains the
  * main method.
  */
 public class Main{
