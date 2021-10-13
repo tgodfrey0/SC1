@@ -11,7 +11,7 @@ import java.util.Scanner;
  * The Main class calls all the functions for the application to run, and it contains the *
  * main method.
  */
-public class Main {
+public class Main{
 
   /**
    * This is the main method. This is the entry point for the application. It starts by getting the username as a string input from the user. Then it creates a Retriever function and calls the getContent method.
@@ -20,12 +20,13 @@ public class Main {
   public static void main(String[] args) {
     String username;
     String name = null;
+
     Scanner input = new Scanner(System.in);
     System.out.print("Please enter the username: ");
     username = input.nextLine();
     Retriever retriever = new Retriever();
     String line = retriever.getContent(username);
-    if (line == null) {
+    if(line == null) {
       System.out.println("Invalid URL");
       return;
     } else {
